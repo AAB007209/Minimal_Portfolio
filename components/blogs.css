@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins&display=swap");
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0a0a0a;
+    color: #d7d7d7;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 8vh;
+    margin: 1vh 0.5vw;
+}
+
+.navelem {
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    gap: 20px;
+    padding: 12px 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+}
+
+.navelem a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #d7d7d7;
+}
+
+.bgmode {
+    background-color: #d7d7d7;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+}
+
+.divider {
+    padding-right: 15px;
+    border-right: 2px solid #9c9b9b;
+}
+
+main {
+    margin: 4vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridcontainer {
+    display: flex;
+    place-items: center;
+    margin: 4vh;
+}
+
+.grid {
+    padding: 10px;
+    display: grid;
+    gap: 50px 50px;
+    border: 1px solid #d7d7d7;
+}
+
+.griditems {
+    border: 1px solid #d7d7d7;
+    padding: 2vw;
+}
+
+.griditems img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+.griditems h4 {
+    margin-bottom: 3px;
+    font-weight: 200;
+    margin-top: 6px;
+}
+
+.griditems a {
+    text-decoration: none;
+    color: #fff;
+}
