@@ -72,28 +72,82 @@ main {
 }
 
 .grid {
-    padding: 10px;
+    padding: 20px;
     display: grid;
-    gap: 50px 50px;
+    gap: 30px;
     border: 1px solid #d7d7d7;
 }
 
 .griditems {
     border: 1px solid #d7d7d7;
-    padding: 2vw;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 .griditems img {
     width: 100%;
     height: auto;
-    margin-bottom: 5px;
 }
 
-.griditems h4 {
-    margin-bottom: 3px;
+.procardtext {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.p1 {
+    background-color: rgb(90, 4, 170);
+    padding: 8px;
+    border-radius: 8px;
 }
 
 .griditems a {
     text-decoration: none;
-    color: #fff;
+}
+
+
+@media ((min-width: 575px) and (max-width: 885px)) {
+
+    main {
+        margin: 4vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid {
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 20px;
+        border: 1px solid #d7d7d7;
+    }
+
+}
+
+@media ((min-width: 885px)) {
+
+    main {
+        margin: 4vh 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 20px;
+        border: 1px solid #d7d7d7;
+    }
+
+    .griditems img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+    }
+
 }

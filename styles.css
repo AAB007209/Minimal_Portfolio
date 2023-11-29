@@ -1,22 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins&display=swap");
 
-*,
-:after,
-:before {
-    box-sizing: border-box;
+:root {
+    --c1: #f6eff8;
+    --c2: #000;
+    --c3: #d7d7d7;
 }
 
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Hanken Grotesk", sans-serif;
+    /* border: 1px solid red; */
 }
 
 html,
 body {
     width: 100vw;
-    height: 100vh;
     background-color: #0a0a0a;
     color: #d7d7d7;
 }
@@ -24,11 +25,20 @@ body {
 main {
     width: 100vw;
     padding: 4vh 6vw;
-    margin: 2vh 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .light-mode {
-    background-color: #fff;
+    background-color: var(--c1);
+    color: var(--c2);
+    border: 1px solid var(--c2);
+}
+
+.light-mode a {
     color: black;
 }
 
@@ -37,8 +47,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 8vh;
-    margin: 1vh 0.5vw;
+    height: 10vh;
 }
 
 .navelem {
@@ -47,14 +56,14 @@ main {
     justify-content: inherit;
     gap: 20px;
     padding: 12px 20px;
-    border: 1px solid #d7d7d7;
+    border: 1px solid var(--c3);
     border-radius: 10px;
+    margin-top: 20px;
 }
 
 .navelem a {
     text-decoration: none;
     font-size: 16px;
-    color: #d7d7d7;
 }
 
 .bgmode {
@@ -77,6 +86,7 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 4vh;
 }
 
 .heading h3 {
@@ -136,11 +146,6 @@ main {
     gap: 10px;
 }
 
-.blogs a {
-    color: #fff;
-    text-decoration: none;
-}
-
 .latestlabs {
     margin-top: 64px;
 }
@@ -153,10 +158,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.labs a {
-    color: #fff;
 }
 
 .connect {
@@ -182,7 +183,24 @@ main {
 }
 
 .connectdivs a {
-    color: #fff;
     text-transform: none;
     text-decoration: none;
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    main {
+        padding: 4vh 12vw;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1240px) {
+    main {
+        padding: 4vh 18vw;
+    }
+}
+
+@media (min-width: 1240px) {
+    main {
+        padding: 4vh 22vw;
+    }
 }
